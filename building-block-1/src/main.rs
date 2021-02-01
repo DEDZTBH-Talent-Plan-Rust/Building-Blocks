@@ -34,7 +34,7 @@ enum MyErr {
     Reason2(String, u32),
 }
 
-impl fmt::Display for MyErrError {
+impl fmt::Display for MyErr {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match *self {
             MyErr::Reason1(ref s) =>
